@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CandidateWebLayer.Models.AllJobsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if(ViewBag.isResult)
+{
+@foreach (var item in Model) 
+{
+<section style="background-color: white;">
+    <div class="row justify-content-center mb-3">
+      <div class="col-md-12 col-xl-10">
+        <div class="card shadow-0 border rounded-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                @if (@item.OrgPhoto != null)
+			    {
+				    string imageBase64 = Convert.ToBase64String(@item.OrgPhoto);
+				    string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
+				    <img src="@imageSrc" width="100" height="100" />
+			    }
+                  <a href="#!">
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-6">
+                <h5>@Html.DisplayFor(modelItem => item.Orgname)</h5>
+                <div class="d-flex flex-row">
+                  <div class="text-danger mb-1 me-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <span>Annual CTC : @Html.DisplayFor(modelItem => item.JobsPackage)</span>
+                </div>
+                <div class="mb-2 text-muted small">
+                  <span>@Html.DisplayFor(modelItem => item.JobsSkill)</span>
+                </div>
+                <p class="text-truncate mb-4 mb-md-0">
+                  @Html.DisplayFor(modelItem => item.JobsDescription)
+                </p>
+              </div>
+                <div class="d-flex flex-column mt-4">
+                  <a class="btn btn-primary btn-sm" asp-controller="Candidate" asp-action="JobDetail" asp-route-Id="@item.JobsId">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+}
+}
+else
+{
+    <h1>No Match Found, Try With Some Different KeyWords</h1>
+    <a asp-action = "Index">Home Page</a>
+}

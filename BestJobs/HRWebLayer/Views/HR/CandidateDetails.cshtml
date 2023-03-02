@@ -1,0 +1,137 @@
+﻿@model HRWebLayer.Models.AllCandidateDetailsModel
+
+@{
+    ViewData["Title"] = "CandidateDetails";
+}
+
+<h1>Candidate Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AddLine)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AddLine)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenthSchool)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenthSchool)
+        </dd>
+        <dt class = "col-sm-2">
+           Tenth Percentage
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenthSchoolPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TwelfthSchool)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TwelfthSchool)
+        </dd>
+        <dt class = "col-sm-2">
+            Twelfth Percentage
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TwelfthSchoolPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GraduationSchool)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GraduationSchool)
+        </dd>
+        <dt class = "col-sm-2">
+           Grad Percentage
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GraduationSchoolPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GraduationStream)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GraduationStream)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrentOrganization)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CurrentOrganization)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrentCTC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CurrentCTC)
+        </dd>
+        <dt class = "col-sm-2">
+            View Resume
+        </dt>
+        <dd class = "col-sm-10">
+            <a asp-action = "ViewResume" asp-route-Id = "@Model.CandidateDetailsId">View Resume</a>
+        </dd>
+        <dt class = "col-sm-2">
+            View Skills
+        </dt>
+        <dd class = "col-sm-10">
+            <form asp-action="ViewSkills"  asp-route-Id = "@Model.CandidateDetailsId">
+                 <div class="form-group">
+                <input type = "hidden" value="@ViewBag.JobsId" class="form-control"  name = "JobsId"/> 
+                </div>
+                 <div class="form-group">
+                <input type="submit" value="View" class="btn btn-primary" />
+                </div>
+        </form>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action = "Accept" asp-route-Id = "@Model.JobStatusId">Accept Candidate</a> <h4>OR</h4> <a asp-action = "Reject" asp-route-Id = "@Model.JobStatusId">Reject Candidate</a>
+</div>

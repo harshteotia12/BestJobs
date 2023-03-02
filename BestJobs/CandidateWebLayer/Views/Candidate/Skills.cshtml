@@ -1,0 +1,64 @@
+﻿@model CandidateWebLayer.Models.SkillsListModel
+
+@{
+    ViewData["Title"] = "Skills";
+}
+
+<h1>Skills</h1>
+
+<h4>SkillsListModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Skills">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class = "singlePerson">
+             <div class="form-group">
+                <label asp-for ="Skills[0].SkillName"></label>
+                <input asp-for ="Skills[0].SkillName" />
+             </div>
+             <div class="slidecontainer">
+                  <label asp-for ="Skills[0].SkillProficiency"></label>
+                 <input asp-for = "Skills[0].SkillProficiency" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+             </div>
+             </div>
+             <div id = "TextBoxContainer"></div>
+             <div class = "form-group">
+                <input id="Addbutton" type="button" value = "Add"/>
+            </div>
+            
+            <div class = "form-group">
+                <input type = "submit" vallue = "Create" class = "btn btn-default"/>
+            </div>
+        </form>
+    </div>
+</div>
+@section scripts
+{
+    <script type = "text/javascript">
+        $(document).ready(function () {       
+        var i = 1;      
+        $("#Addbutton").click(function () {       
+        var div = $("<div />");            
+        var skillNamelabel = "<label>Skill Name: </label>"        
+        var skillProflabel = "<label>Skill Proficiency </label>"        
+        var value = "";            
+        var skillBox = $("<input />").attr("type","textbox").attr("name","Skills["+i+"].SkillName");       
+        var levelBox = $("<input />").attr("type","range").attr("name","Skills["+i+"].SkillProficiency");               
+        skillBox.val(value);       
+        levelBox.val(value);       
+        div.append("<br>");        
+        div.append(skillNamelabel)        
+        div.append(skillBox);
+        div.append("<br>");       
+        div.append(skillProflabel)       
+        div.append(levelBox);
+        $("#TextBoxContainer").append(div);
+        i++;
+        });});
+    </script>
+}
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

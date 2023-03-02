@@ -1,0 +1,107 @@
+﻿@model CandidateWebLayer.Models.CandidateResumeModel
+
+@{
+    ViewData["Title"] = "CreateResumeView";
+}
+<style>
+body {
+	background-color:lightgray;
+}
+</style>
+<section style="background-color:lightgray; width : 100%; height : 100%;">
+      <div class="col-lg-100" style = "width : inherit;">
+        <div class="card mb-100" style = "width : inherit">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">10th School</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> @Html.DisplayFor(model => model.TenthSchool)</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">10th %</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> @Html.DisplayFor(model => model.TenthSchoolPercentage)</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">12th School</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> @Html.DisplayFor(model => model.TwelfthSchool)</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">12th %</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">@Html.DisplayFor(model => model.TwelfthSchoolPercentage)</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Grad. School</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> @Html.DisplayFor(model => model.GraduationSchool)</p>
+              </div>
+            </div>
+             <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Grad. %</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> @Html.DisplayFor(model => model.GraduationSchoolPercentage)</p>
+              </div>
+            </div>
+             <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Grad. Stream</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> @Html.DisplayFor(model => model.GraduationStream)</p>
+              </div>
+            </div>
+             <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Current Org and CTC</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> @Html.DisplayFor(model => model.CurrentOrganization) and  @Html.DisplayFor(model => model.CurrentCTC)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          @foreach(var list in @ViewBag.Skill)
+            {
+                   <div class="col-md-6">
+                   <div class="card mb-4 mb-md-0">
+                   <div class="card-body">
+                   <p class="mt-4 mb-1" style="font-size: .77rem;">@list.SkillName</p>
+                   <div class="progress rounded" style="height: 5px;">
+                   <div class="progress-bar" role="progressbar" style="width: @list.SkillProficiency%" aria-valuenow="72"aria-valuemin="0" aria-valuemax="100"></div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+        }
+        <hr>
+        <hr>
+          </div>
+          </div>
+          <a asp-action = "EditResume" asp-route-Id = "@Model.CandidateResumeId">Edit Details</a>
+</section>

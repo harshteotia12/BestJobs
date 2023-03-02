@@ -1,0 +1,15 @@
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\bin\Release\net5.0\DataAccessLayer.deps.json
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\bin\Release\net5.0\DataAccessLayer.runtimeconfig.json
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\bin\Release\net5.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\bin\Release\net5.0\DataAccessLayer.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\bin\Release\net5.0\DataAccessLayer.pdb
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\refint\DataAccessLayer.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.pdb
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAccessLayer\obj\Release\net5.0\ref\DataAccessLayer.dll

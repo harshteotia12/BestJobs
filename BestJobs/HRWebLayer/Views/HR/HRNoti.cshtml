@@ -1,0 +1,34 @@
+﻿@model IEnumerable<HRWebLayer.Models.HRNotiModel>
+
+@{
+    ViewData["Title"] = "HRNoti";
+}
+
+<h1>Notifications</h1>
+@if (ViewBag.isAvailable)
+{
+    <table class="table">
+        @foreach (var item in Model)
+        {
+            <form asp-action="CandidateDetails"  asp-route-Id = "@item.CandidateId">
+                <tr>
+                    <td>
+                        <partial>Candidate @item.CandidateName has shown intreset in a job posted by you (@item.JobsName)!</partial>
+                        <div class="form-group">
+                            <input type = "hidden" value="@item.JobsId" class="form-control"  name = "JobsId"/> 
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="View" class="btn btn-primary" />
+                        </div>
+                    </td>
+                </tr>
+            </form>
+        }
+    </table>
+}
+else
+{
+    <h3 style = "color : Red;">No Candidates have applied till now!</h3>
+}
+
+

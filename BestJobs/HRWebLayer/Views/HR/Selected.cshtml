@@ -1,0 +1,24 @@
+﻿@model IEnumerable<HRWebLayer.Models.SelectedModel>
+
+@{
+    ViewData["Title"] = "Selected";
+}
+
+<h1>Selected Candidates</h1>
+@if (ViewBag.isAvailable)
+{
+    @foreach (var item in Model)
+    {
+        <table>
+        <tr>
+            <td>
+                You have selected the candidate @item.CandidateName for the job @item.JobName
+            </td>
+        </tr>
+        </table>
+    }
+}
+else
+{
+     <h3 style = "color : Red;">You have not selected any candidates till now</h3>
+}

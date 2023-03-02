@@ -1,0 +1,15 @@
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\bin\Release\net5.0\DataAuthDb.deps.json
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\bin\Release\net5.0\DataAuthDb.runtimeconfig.json
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\bin\Release\net5.0\DataAuthDb.runtimeconfig.dev.json
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\bin\Release\net5.0\DataAuthDb.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\bin\Release\net5.0\DataAuthDb.pdb
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.csproj.AssemblyReference.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.AssemblyInfoInputs.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.AssemblyInfo.cs
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.csproj.CoreCompileInputs.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\refint\DataAuthDb.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.pdb
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\DataAuthDb.genruntimeconfig.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\DataAuthDb\obj\Release\net5.0\ref\DataAuthDb.dll

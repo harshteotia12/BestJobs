@@ -1,0 +1,15 @@
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\bin\Release\net5.0\BusinessLogicLayer.deps.json
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\bin\Release\net5.0\BusinessLogicLayer.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\bin\Release\net5.0\BusinessLogicLayer.pdb
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\bin\Release\net5.0\DataAccessLayer.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\bin\Release\net5.0\DataAccessLayer.pdb
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\refint\BusinessLogicLayer.dll
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\BusinessLogicLayer.pdb
+C:\Users\harteoti\BestJobsProject\PSI-2022-Apr-DotNet-Eng-Batch\BestJobs\BusinessLogicLayer\obj\Release\net5.0\ref\BusinessLogicLayer.dll

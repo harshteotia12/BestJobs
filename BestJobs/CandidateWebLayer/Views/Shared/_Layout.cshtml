@@ -1,0 +1,84 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CandidateWebLayer</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" asp-action = "Index" asp-controller = "Candidate">
+                <img src="~/images/logo.png" width="70" height="60" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                
+                @if (Accessor.HttpContext.Session.GetString("UserName")!=null && Accessor.HttpContext.Session.GetString("UserName")!="null")
+                    {
+                        <p class="nav justify-content-end" style="font-family: 'Californian FB';font-size:100%;color:grey;"><b> Hello @Accessor.HttpContext.Session.GetString("YourName"), Welcome to BestJobs.com</b></p>
+                        <p class="navbar-nav ml-auto" style="font-family: 'Californian FB';font-size:200%;color:grey;"><b>BestJobs.com</b></p>
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Candidate" asp-action="CreateDetails">Details</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Candidate" asp-action="CreateResume">Professional_Details</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Candidate" asp-action="Skills">Add Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Resume" asp-action="ViewResume" target = "_blank">Your Resume!</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Candidate" asp-action="JobsNotification">Jobs Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+                        </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="navbar-nav ml-auto" style="font-family: 'Californian FB';font-size:200%;color:grey;"><b>BestJobs.com</b></p>
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Register">Register</a>
+                        </li>
+                        </ul>
+                    }
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style = "height : 80px;">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(18, 28, 32, 0.8);">
+    © 2022 Copyright:
+    <a class="text-white" href="~/images/logo.png">BestJobs.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

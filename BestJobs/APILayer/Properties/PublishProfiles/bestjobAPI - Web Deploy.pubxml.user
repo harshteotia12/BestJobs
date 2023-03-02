@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEoQG8Wks0k6aoExM/DA6HwAAAAACAAAAAAADZgAAwAAAABAAAAADvIZg+8yhjCYngGm8IuHnAAAAAASAAACgAAAAEAAAAKxbsSaCUcsyoSewvXMLbluAAAAAzuFLwA7Kyeo19ZW2HPgahY7NaXuDPbn2lxa8VyLhTxYVBmR9wESLFKQPligXOhOwFhLrepCMDfLPeGNnlXnoK5nn1j8nbaisKij16/Rby8EBADWIiqcRaZoD3EgYuy6OiMUsTceNLYjmKOniM48JDEWzdouW9bRJSNmRnbLPkkAUAAAAYPdF5ohbpUvm+ns+u/XNv1F7gug=</EncryptedPassword>
+    <History>True|2022-07-26T13:59:45.3833387Z;True|2022-07-21T22:38:31.2162126+05:30;True|2022-07-21T22:31:05.5176708+05:30;True|2022-07-21T22:10:35.3246739+05:30;True|2022-07-21T22:07:35.0928557+05:30;True|2022-07-21T21:50:47.2590815+05:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="BestJobDb">
+      <Value>Server=tcp:datadbcontext.database.windows.net,1433%3bInitial Catalog=databdcontext%3bPersist Security Info=False%3bUser ID=datadb%3bPassword=Harsh%40123%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="BestJobDbAuth">
+      <Value>Server=tcp:datadbcontext.database.windows.net,1433%3bInitial Catalog=databdcontext%3bPersist Security Info=False%3bUser ID=datadb%3bPassword=Harsh%40123%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

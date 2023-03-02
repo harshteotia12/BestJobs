@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CandidateWebLayer.Models.JobStatusModel>
+
+@{
+    ViewData["Title"] = "JobsNotification";
+}
+
+<h1>Jobs Notification</h1>
+@if(ViewBag.isAvailable)
+{
+<table class="table">
+    @foreach (var item in Model) 
+    {
+        <tr>
+            <td>
+                @if(item.IsRejected == false)
+                {
+                    @if(item.IsSelected == false)
+                    {
+                        <partial>You have applied for the Job => <a asp-action = "JobDetail" asp-route-Id = "@item.JobsId">@item.JobsName</a> is still under process</partial>
+                    }
+                    else
+                    {
+                        <partial>You are selected for the Job => <a asp-action = "JobDetail" asp-route-Id = "@item.JobsId">@item.JobsName</a>, congratulations!!!</partial>
+                    }
+                }
+                else
+                {
+                    <partial>You are rejected for the job => <a asp-action = "JobDetail" asp-route-Id = "@item.JobsId">@item.JobsName</a></partial>
+                }
+            </td>
+        </tr>
+    }
+</table>
+}
+else
+{
+    <h3 style = "color : Red;">You have not applied for any jobs!</h3>
+}

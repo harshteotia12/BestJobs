@@ -1,0 +1,98 @@
+﻿@model CandidateWebLayer.Models.AllJobsModel
+
+@{
+    ViewData["Title"] = "JobDetail";
+}
+
+<h1>Job's Detail</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+           Name
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JobsName)
+        </dd>
+        <dt class = "col-sm-2">
+            Skills Reqd.
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JobsSkill)
+        </dd>
+        <dt class = "col-sm-2">
+            Annual CTC
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JobsPackage)
+        </dd>
+        <dt class = "col-sm-2">
+            Job Posted On
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JobsPostDate)
+        </dd>
+        <dt class = "col-sm-2">
+            Description
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JobsDescription)
+        </dd>
+        <dt class = "col-sm-2">
+            HR Email
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+        <dt class = "col-sm-2">
+            HR Name
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HRName)
+        </dd>
+        <dt class = "col-sm-2">
+            HR Years Of Exp.
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HRYOE)
+        </dd>
+        <dt class = "col-sm-2">
+            Organization Name
+        </dt>
+        <dd class = "col-sm-10">
+           @Html.DisplayFor(model => model.Orgname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OrgPhoto)
+        </dt>
+        <dd class = "col-sm-10">
+                @if (@Model.OrgPhoto != null)
+			    {
+				    string imageBase64 = Convert.ToBase64String(@Model.OrgPhoto);
+				    string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
+				    <img src="@imageSrc" width="100" height="100" />
+			    }
+        </dd>
+    </dl>
+</div>
+<div>
+        @if (ViewBag.IsComplete == false)
+        {
+            @if (ViewBag.IsApplied == false)
+            {
+                <h4><a asp-action="Apply" asp-route-Id="@Model.JobsId">Apply</a></h4>
+            }
+
+            else
+            {
+                <h3>You Have already applied for this job!</h3>
+            }
+
+        }
+        else
+        {
+            <h2>Congo, On your selection!!! check your mail for further details</h2>
+        }
+
+</div>

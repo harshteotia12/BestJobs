@@ -1,0 +1,58 @@
+﻿@model IEnumerable<HRWebLayer.Models.JobsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Jobs</h1>
+
+<p>
+    <a asp-action="CreateJobs">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JobsName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobsSkill)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobsPackage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobsPostDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobsDescription)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobsName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobsSkill)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobsPackage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobsPostDate.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobsDescription)
+            </td>
+            <td>
+                <a asp-action="DeleteJobs" asp-route-Id= "@item.JobsId">Delete</a> | <a asp-action="EditJobs" asp-route-Id= "@item.JobsId">Edit</a>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
